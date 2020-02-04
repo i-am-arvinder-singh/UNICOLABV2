@@ -8,12 +8,12 @@
 // 6. Learn to generate pull request and merge with master.
 
 
-Inititial Assignment
-1. Arvinder Singh
-2. Debojit Das
-3. Ritu Agarwal
-4. Vartika Varshney
-5. Abinash Dutta
+// Inititial Assignment
+// 1. Arvinder Singh
+// 2. Debojit Das
+// 3. Ritu Agarwal
+// 4. Vartika Varshney
+// 5. Abinash Dutta
 
 
 //Sort of Deadline- 26th February and then before 15th March
