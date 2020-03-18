@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  margin:0;
+}
+
+
+.grid1 {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 100vh; 
+}
+
+
+.grid2 {
+  float: right;
+  width: 75%;
+  padding: 10px;
+  height: 50vh; 
+}
+
+
+
+.grid3 {
+  float: right;
+  width: 75%;
+  padding: 10px;
+  height: 50vh; 
+}
+
+
+.row:after {
+ 
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+
+
+<body>
+
+
+<div class="row">
+  <div class="grid1" style="background-color:#aaa;">
+    <br><br><br>
+    <h2>Welcome,</h2>
+          <%= name %> <br><br>
+    <h4>Phone no.: </h4>       <%= phone_number %> 
+    <h4>email: </h4>
+          <%= email %> 
+    <h4>Publications: </h4>
+         <%= publications %> 
+    <h4>Experience (in years): </h4>
+         <%= exp %>     
+    <h4>Profile Link: </h4>
+           <%= link %> 
+   
+  </div>
+ 
+ 
+ 
+  <div class="grid2" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p></p>
+  </div>
+ 
+ 
+ 
+ 
+  <div class="grid3" style="background-color:#ccc;">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+
+</body>
+</html>

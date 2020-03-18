@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const validator = require('validator')
 
 
-var UserSchema = new mongoose.Schema({
+const UserSchema = new mongoose.Schema({
     email:{
         type: String,
         required: true,
@@ -22,26 +22,37 @@ var UserSchema = new mongoose.Schema({
     },
     phonenumber: {
         type: String,
-        minlength: 10
+        default: ""
     },
     organisation: {
-        type : String
+        type : String,
+        default: ""
     },
     research_exp: {
-        type: String
+        type: String,
+        default: ""
     },
     publications:{
-        type:String
+        type:String,
+        default: ""
     },
     name: {
-        type: String
+        type: String,
+        default: ""
     },
     url:{
-        type:String
+        type:String,
+        default: ""
     },
     id: {
+        type: String,
+        default: ""
+    },
+    designation: {
         type: String
-        require: true
+    },
+    interest: {
+        type: String
     }
 })
 
