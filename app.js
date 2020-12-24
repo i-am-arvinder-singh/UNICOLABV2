@@ -18,10 +18,12 @@ var {
 var {
     mongoose
 } = require('./connect.js');
+
 var rzp = new Razorpay({
     key_id: 'rzp_test_ww9vFc3GF9XHaH', // need to change in payment.ejs
     key_secret: 'DmZF9wbbOdLhpghCh7M25Jhn'
 })
+
 //authentication schemes
 var session = require('express-session')
 var cookieParser = require('cookie-parser')
@@ -40,10 +42,12 @@ app.use(session({
 }))
 app.use(passport.initialize());
 app.use(passport.session());
+
 if (typeof localStorage === "undefined" || localStorage === null) {
     var LocalStorage = require('node-localstorage').LocalStorage
     localStorage = new LocalStorage('./scratch')
 }
+
 //Start of Get Requests
 app.get('/', (req, res) => {
     if (req.isAuthenticated() === true) {
